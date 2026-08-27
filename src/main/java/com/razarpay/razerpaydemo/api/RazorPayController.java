@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/razor-pay")
 public class RazorPayController {
 	
-	
 	@Autowired
 	RazorPaymentService paymentService;
 	
