@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "https://my-angular-payment-app.vercel.app")
+@CrossOrigin(origins = "https://java-consultancy-website.vercel.app")
 @RequestMapping("/razor-pay")
 public class RazorPayController {
 	
