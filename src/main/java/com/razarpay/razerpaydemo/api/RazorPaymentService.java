@@ -83,12 +83,9 @@ public class RazorPaymentService {
   public void healthCheck() {
 
       System.out.println(
-          "Health scheduler running at: "
-          + LocalDateTime.now()
-      );
-
+          "Health scheduler running at: ");
   }
-  
+
   
   
 
