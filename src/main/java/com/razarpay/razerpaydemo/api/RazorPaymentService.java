@@ -89,14 +89,6 @@ public class RazorPaymentService {
   
   
 
-	@Scheduled(fixedRate = 600000)
-  public void healthCheck() {
-
-      System.out.println(
-          "Health scheduler running at: "
-          + LocalDateTime.now()
-      );
-
-  }
+	
 
 }
