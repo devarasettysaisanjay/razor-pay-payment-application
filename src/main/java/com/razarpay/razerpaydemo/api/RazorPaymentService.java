@@ -1,8 +1,11 @@
 package com.razarpay.razerpaydemo.api;
 
 
+import java.time.LocalDateTime;
+
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.razorpay.Order;
@@ -75,5 +78,18 @@ public class RazorPaymentService {
               keySecret
       );
   }
+  
+  @Scheduled(fixedRate = 600000)
+  public void healthCheck() {
+
+      System.out.println(
+          "Health scheduler running at: "
+          + LocalDateTime.now()
+      );
+
+  }
+  
+  
+  
 
 }
