@@ -23,7 +23,7 @@ public class RazorPayController {
 	RazorPaymentService paymentService;
 	
 	
-	@GetMapping("/test")
+	@GetMapping("/health")
 	public String test() {
 		return "Hi";
 	}
